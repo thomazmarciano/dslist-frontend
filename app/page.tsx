@@ -18,7 +18,7 @@ export default function Home() {
           </p>
 
           <LoadingLink href="/lists">
-            <button className="mt-6 rounded-lg bg-blue-500 px-6 py-3 text-lg font-medium text-white shadow-lg hover:bg-blue-600 transition">
+            <button className="mt-6 rounded-lg bg-blue-500 px-6 py-3 text-lg font-medium cursor-pointer text-white shadow-lg hover:bg-blue-600 transition">
               Iniciar
             </button>
           </LoadingLink>

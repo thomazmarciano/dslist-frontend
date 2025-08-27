@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { LoadingLink } from "@/app/components/LoadingLink";
 
 export default async function GamesPage() {
@@ -25,12 +24,7 @@ export default async function GamesPage() {
               key={game.id}
               className="rounded-lg bg-white p-4 shadow hover:shadow-md transition"
             >
-              <LoadingLink
-                className="block"
-                href={`/lists/${game.id}/games?name=${encodeURIComponent(
-                  game.name
-                )}`}
-              >
+              <LoadingLink className="block" href={`/lists/${game.id}/games`}>
                 <h2 className="text-xl font-semibold">{game.name}</h2>
               </LoadingLink>
             </li>

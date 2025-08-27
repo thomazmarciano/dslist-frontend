@@ -7,25 +7,9 @@ export default function BackButton() {
   const router = useRouter();
   const { setIsLoading } = useLoading();
 
-  const handleBack = async (e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-
-    setIsLoading(true);
-
-    await new Promise((resolve) => setTimeout(resolve, 300));
-
-    if (window.history.length > 1) {
-      router.back();
-    } else {
-      router.push("/dsadasdasdas");
-    }
-  };
-
   return (
     <LoadingLink
-      href="/"
-      onClick={handleBack}
+      href="/lists"
       className="text-white hover:text-blue-300 transition-colors flex items-center gap-2"
     >
       <svg
